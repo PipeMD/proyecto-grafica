@@ -8,4 +8,7 @@ Aquí está el [link al video de Youtube](https://youtu.be/xBu_7pUlzno), en el q
 
 En este [link se encuentra la presentación](https://github.com/PipeMD/proyecto-grafica/blob/main/Entrega%2002/Presentaci%C3%B3n%20Ortiz%20Mateluna.pdf), la que es nuestro soporte visual. 
 
+Aquí se puede encontrar la presentación actualizada en [Canvas](https://www.canva.com/design/DAGEyXHwVAk/6p3CuT9vagFzgigPURYxFw/edit).
+
+
 ¡Saludos!
