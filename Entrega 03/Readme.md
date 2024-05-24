@@ -61,3 +61,9 @@ Como se mencionó anteriormente nos inspiramos en muchísimos medios dedicados a
 [The Pudding](https://pudding.cool/2017/03/redraft/)
 
 Esos son los que extraímos inspiración directamente. Sin embargo hay cientos de otros los cuales se pueden reflejar en el proyecto también, ya que, como podrán imaginar somos fans y consumimos mucho periodismo de básquetbol.
+
+### Video y presentación
+
+En este [link](https://youtu.be/TLClu_FHi6U) encontrarán un vídeo en el que pasamos por los puntos mas importantes de nuestra entrega.
+
+Y en este [otro](https://www.canva.com/design/DAGGHCXT284/ZG4ixkS0OebxAvdLgdqo_Q/edit?utm_content=DAGGHCXT284&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), encontrarán la presentación utilizada en el video.
