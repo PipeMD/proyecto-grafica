@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-fb8fa7568cb82c5ad9bb462ecf93bbc0"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "Team", "scale": {"domain": ["Bulls", "Mavericks", "Lakers", "Rockets", "Spurs"], "range": ["#CE1141", "#00538C", "#FDB927", "#C4CED4", "#000000"]}, "type": "nominal"}, "tooltip": [{"field": "Year", "type": "quantitative"}, {"field": "Team", "type": "nominal"}, {"field": "Home Total Attendance", "type": "quantitative"}], "x": {"field": "Year", "type": "ordinal"}, "y": {"field": "Home Total Attendance", "type": "quantitative"}}, "height": 900, "selection": {"selector005": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "title": "Asistencia Local Total por A\u00f1o y Equipo en la NBA (Equipos Seleccionados)", "width": 1200, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-fb8fa7568cb82c5ad9bb462ecf93bbc0": [{"Year": 2024, "Team": "Bulls", "Home Total Attendance": 845.62}, {"Year": 2023, "Team": "Bulls", "Home Total Attendance": 841.632}, {"Year": 2022, "Team": "Bulls", "Home Total Attendance": 856.148}, {"Year": 2021, "Team": "Bulls", "Home Total Attendance": 13.655}, {"Year": 2020, "Team": "Bulls", "Home Total Attendance": 639.352}, {"Year": 2019, "Team": "Bulls", "Home Total Attendance": 823.475}, {"Year": 2018, "Team": "Bulls", "Home Total Attendance": 851.824}, {"Year": 2017, "Team": "Bulls", "Home Total Attendance": 888.882}, {"Year": 2016, "Team": "Bulls", "Home Total Attendance": 894.659}, {"Year": 2015, "Team": "Bulls", "Home Total Attendance": 875.091}, {"Year": 2014, "Team": "Bulls", "Home Total Attendance": 890.37}, {"Year": 2024, "Team": "Lakers", "Home Total Attendance": 793.945}, {"Year": 2023, "Team": "Lakers", "Home Total Attendance": 763.168}, {"Year": 2022, "Team": "Lakers", "Home Total Attendance": 764.631}, {"Year": 2021, "Team": "Lakers", "Home Total Attendance": 23.313}, {"Year": 2020, "Team": "Lakers", "Home Total Attendance": 588.907}, {"Year": 2019, "Team": "Lakers", "Home Total Attendance": 778.877}, {"Year": 2018, "Team": "Lakers", "Home Total Attendance": 776.327}, {"Year": 2017, "Team": "Lakers", "Home Total Attendance": 776.917}, {"Year": 2016, "Team": "Lakers", "Home Total Attendance": 778.877}, {"Year": 2015, "Team": "Lakers", "Home Total Attendance": 768.244}, {"Year": 2014, "Team": "Lakers", "Home Total Attendance": 771.974}, {"Year": 2024, "Team": "Mavericks", "Home Total Attendance": 828.897}, {"Year": 2023, "Team": "Mavericks", "Home Total Attendance": 827.282}, {"Year": 2022, "Team": "Mavericks", "Home Total Attendance": 809.315}, {"Year": 2021, "Team": "Mavericks", "Home Total Attendance": 94.849}, {"Year": 2020, "Team": "Mavericks", "Home Total Attendance": 682.096}, {"Year": 2019, "Team": "Mavericks", "Home Total Attendance": 820.569}, {"Year": 2018, "Team": "Mavericks", "Home Total Attendance": 811.453}, {"Year": 2017, "Team": "Mavericks", "Home Total Attendance": 811.366}, {"Year": 2016, "Team": "Mavericks", "Home Total Attendance": 825.901}, {"Year": 2015, "Team": "Mavericks", "Home Total Attendance": 827.702}, {"Year": 2014, "Team": "Mavericks", "Home Total Attendance": 817.982}, {"Year": 2024, "Team": "Rockets", "Home Total Attendance": 720.045}, {"Year": 2023, "Team": "Rockets", "Home Total Attendance": 668.865}, {"Year": 2022, "Team": "Rockets", "Home Total Attendance": 638.977}, {"Year": 2021, "Team": "Rockets", "Home Total Attendance": 117.009}, {"Year": 2020, "Team": "Rockets", "Home Total Attendance": 578.458}, {"Year": 2019, "Team": "Rockets", "Home Total Attendance": 740.392}, {"Year": 2018, "Team": "Rockets", "Home Total Attendance": 716.008}, {"Year": 2017, "Team": "Rockets", "Home Total Attendance": 695.903}, {"Year": 2016, "Team": "Rockets", "Home Total Attendance": 737.244}, {"Year": 2015, "Team": "Rockets", "Home Total Attendance": 747.412}, {"Year": 2014, "Team": "Rockets", "Home Total Attendance": 743.082}, {"Year": 2024, "Team": "Spurs", "Home Total Attendance": 742.522}, {"Year": 2023, "Team": "Spurs", "Home Total Attendance": 694.434}, {"Year": 2022, "Team": "Spurs", "Home Total Attendance": 615.588}, {"Year": 2021, "Team": "Spurs", "Home Total Attendance": 61.053}, {"Year": 2020, "Team": "Spurs", "Home Total Attendance": 550.515}, {"Year": 2019, "Team": "Spurs", "Home Total Attendance": 750.616}, {"Year": 2018, "Team": "Spurs", "Home Total Attendance": 754.562}, {"Year": 2017, "Team": "Spurs", "Home Total Attendance": 755.347}, {"Year": 2016, "Team": "Spurs", "Home Total Attendance": 756.445}, {"Year": 2015, "Team": "Spurs", "Home Total Attendance": 762.855}, {"Year": 2014, "Team": "Spurs", "Home Total Attendance": 755.031}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
