@@ -3,7 +3,7 @@
 ## Visualización
 
 * ### Primer Gráfico
-* 
+
 Lo que hice para visualizar los datos y para hacer el gráfico fue primero importar de Altair. Después asigne el csv al nombre nba_data y filtre los datos de la base (Son demasiados) para que me mostrara solo los datos de 5 equipos, por lo que puse __teams = Bulls, Mavericks, Lakers, Rockets y Spurs__ y después filtre los datos con este código:
 
 __data_filtrada = nba_data[nba_data['Team'].isin(teams)][['Year', 'Team', 'Home Total Attendance']]__.
