@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"data": {"name": "data-fd9dd86ce6988248e0de3130168f5b8a"}, "mark": "bar", "encoding": {"tooltip": [{"field": "Team", "type": "nominal"}, {"field": "Home Total Attendance", "type": "quantitative"}], "x": {"field": "Home Total Attendance", "title": "Home Total Attendance", "type": "quantitative"}, "y": {"field": "Team", "sort": "-x", "title": "Team", "type": "nominal"}}, "height": 600, "title": "Total Home Attendance por Equipo en la NBA", "width": 800}, {"data": {"name": "data-fd9dd86ce6988248e0de3130168f5b8a"}, "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"field": "Home Total Attendance", "type": "quantitative"}, "tooltip": [{"field": "Team", "type": "nominal"}, {"field": "Home Total Attendance", "type": "quantitative"}], "x": {"field": "Home Total Attendance", "title": "Home Total Attendance", "type": "quantitative"}, "y": {"field": "Team", "sort": "-x", "title": "Team", "type": "nominal"}}, "height": 600, "title": "Total Home Attendance por Equipo en la NBA", "width": 800}], "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-fd9dd86ce6988248e0de3130168f5b8a": [{"Team": "76ers", "Home Total Attendance": 7348.393}, {"Team": "Bucks", "Home Total Attendance": 6631.016}, {"Team": "Bulls", "Home Total Attendance": 8420.708}, {"Team": "Cavaliers", "Home Total Attendance": 7919.754}, {"Team": "Celtics", "Home Total Attendance": 7440.867}, {"Team": "Clippers", "Home Total Attendance": 7366.649}, {"Team": "Grizzlies", "Home Total Attendance": 6640.546}, {"Team": "Hawks", "Home Total Attendance": 6559.189}, {"Team": "Heat", "Home Total Attendance": 8505.759}, {"Team": "Hornets", "Home Total Attendance": 6740.718}, {"Team": "Jazz", "Home Total Attendance": 7544.726000000001}, {"Team": "Kings", "Home Total Attendance": 7197.413}, {"Team": "Lakers", "Home Total Attendance": 7585.18}, {"Team": "Mavericks", "Home Total Attendance": 8157.412}, {"Team": "NY Knicks", "Home Total Attendance": 7849.711}, {"Team": "Nets", "Home Total Attendance": 6605.152}, {"Team": "Nuggets", "Home Total Attendance": 6917.007}, {"Team": "Pacers", "Home Total Attendance": 7061.5869999999995}, {"Team": "Pistons", "Home Total Attendance": 6636.704}, {"Team": "Raptors", "Home Total Attendance": 7628.542}, {"Team": "Rockets", "Home Total Attendance": 7103.395}, {"Team": "Spurs", "Home Total Attendance": 7198.968}, {"Team": "Suns", "Home Total Attendance": 6772.986}, {"Team": "Thunder", "Home Total Attendance": 7626.86}, {"Team": "Timberwolves", "Home Total Attendance": 6289.569}, {"Team": "Trail Blazers", "Home Total Attendance": 7632.898999999999}, {"Team": "Warriors", "Home Total Attendance": 7690.121}, {"Team": "Wizards", "Home Total Attendance": 6898.919}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
