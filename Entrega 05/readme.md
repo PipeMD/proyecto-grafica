@@ -1,6 +1,6 @@
 # Entrega 05
 
-Holaaa profes, en este readme les dejamos el [Link](https://www.canva.com/design/DAGEyXHwVAk/6p3CuT9vagFzgigPURYxFw/edit) a la presentación y el [video]() de youtube
+Holaaa profes, en este readme les dejamos el [Link](https://www.canva.com/design/DAGEyXHwVAk/6p3CuT9vagFzgigPURYxFw/edit) a la presentación y el [video](https://youtu.be/78a6zbjzQY8) de youtube
 
 También les dejamos la publicación en GitHub Pages con la página de nuestro proyecto: https://pipemd.github.io/proyecto-grafica/
 
