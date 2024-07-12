@@ -10,3 +10,4 @@
    
 5. Índice: Esta visualización contempla todos los elementos de nuestra database, y busca evidenciar cual temporada de los tres equipos en los últimos 10 años fue mejor. Con esta se pueden explicar historias que van desde lo social hasta lo deportivo.
 
+6. Tradición: Esta visualización contempla los elementos de nuestro índice en una tabla que ve la tradición y huella que han dejado los tres equipos en la NBA. 

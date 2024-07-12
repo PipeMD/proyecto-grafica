@@ -9,3 +9,5 @@
 4. VALOR Y GANANCIA: Cuanto vale cada equipo en Billones de dólares y cuanta ganancia ha recibido el equipo en el periodo de 10 años que analizamos. 
    
 5. ÍNDICE: El mensaje final de nuestra página, cuál de los tres equipos ha sido el más exitoso con las distintas dimensiones expuestas en la base de datos. 
+
+6. TRADICIÓN: Cual equipo tiene más tradición con el paso de los años, quien ha hecho más historia en cuanto a lo deportivo y dejado huella en la liga.
